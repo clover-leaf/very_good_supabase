@@ -14,7 +14,7 @@ void main() {
   late GotrueSessionResponse gotrueSessionResponse;
   late GoTrueClient goTrueClient;
 
-  const email = 'test@test.com';
+  const email = 'fake@email.com';
 
   setUp(() {
     gotrueSessionResponse = FakeGotrueSessionResponse();
