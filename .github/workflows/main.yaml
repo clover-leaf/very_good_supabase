@@ -1,6 +1,6 @@
 name: very_good_supabase
 
-on: [pull_request, push]
+on: push
 
 jobs:
   build:
