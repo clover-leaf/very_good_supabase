@@ -1,0 +1,20 @@
+name: supabase_auth_client
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/test_workflow.yaml"
+    branches:
+      - master
+  
+jobs:
+  build:
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
+    with:
+      flutter_version: 3.0.2
+      flutter_channel: stable
+      coverage_excludes: "lib/src/generated/*.dart"
