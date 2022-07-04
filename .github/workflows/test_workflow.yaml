@@ -1,4 +1,4 @@
-name: supabase_auth_client
+name: test_workflow
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
