@@ -7,9 +7,9 @@ on:
 
 jobs:
   build:
-  defaults:
-      run:
-        working-directory: .
+    defaults:
+        run:
+          working-directory: .
 
     runs-on: ubuntu-latest
 
