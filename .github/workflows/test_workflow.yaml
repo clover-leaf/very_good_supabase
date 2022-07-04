@@ -1,4 +1,4 @@
-name: test_workflow
+name: test_workflow_again
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
